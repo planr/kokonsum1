@@ -1,0 +1,19 @@
+<head>
+  <title>containr-step1</title>
+</head>
+
+<body>
+	<div style="border:1px solid black;margin:0px auto;width:70%;">
+  		{{> meineContainer}}
+  	</div>
+</body>
+
+<template name="meineContainer">
+  <h1>Hallo Dumpsters da draußen!<br>Welcome to containr!</h1>
+  <input type="button" value="Einen Containr melden" />
+  <ul id="containrListe">
+  	{{#each containers}}
+  	<li>{{title}}</li>
+  	{{/each}}
+  </ul>
+</template>
